@@ -1,10 +1,10 @@
 import React from 'react'
 import './Counter.css';
 
-const Button = () => {
+const Button = ({onClick}) => {
   return (
     <>
-        <div className='btn' >
+        <div className='btn' onClick={onClick}>
             <h3>Click Me</h3>
         </div>
     </>
