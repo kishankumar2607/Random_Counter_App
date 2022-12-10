@@ -1,74 +1,80 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    height: 100vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	height: 100vh;
 }
 
 .labelDiv {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    border: 2px solid #ff017d;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    animation: gradient 15s ease infinite;
-    width: 500px;
-    color: #fff;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	margin-bottom: 1rem;
+	font-size: 2rem;
+	border: 2px solid #ff017d;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	animation: gradient 15s ease infinite;
+	width: 500px;
+	color: #fff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
+	0% {
+		background-position: 0% 50%;
+	}
 
-    50% {
-        background-position: 100% 50%;
-    }
+	50% {
+		background-position: 100% 50%;
+	}
 
-    100% {
-        background-position: 0% 50%;
-    }
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 .mainDiv {
-    display: flex;
-    margin-bottom: 1rem;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	margin-bottom: 1rem;
+	text-align: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 .buttonDiv {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .btn {
-    background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
-    margin: 10px;
-    padding: 5px 50px;
-    text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: white;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    display: block;
-    cursor: pointer;
-    max-width: 230px;
-    color: #1c2444;
+	background-image: linear-gradient(
+		to right,
+		#ff6e7f 0%,
+		#bfe9ff 51%,
+		#ff6e7f 100%
+	);
+	margin: 10px;
+	padding: 5px 50px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	display: block;
+	cursor: pointer;
+	max-width: 230px;
+	color: #1c2444;
 }
 
 .btn:hover {
-    background-position: right center;
-    /* change the direction of the change here */
-    color: #fff;
-    text-decoration: none;
+	background-position: right center;
+	/* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
 }
