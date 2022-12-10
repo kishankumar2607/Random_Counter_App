@@ -42,16 +42,21 @@ const Counter = () => {
     <>
       <div className='container'>
         <div className='mainDiv'>
+          <div className='inner'>
+            <div className='headingDiv'>
+              <h1 className="shimmer">Increment/Decrement Random Number</h1>
+            </div>
+          </div>
 
-          <div className='labelDiv'>
+          <div className='labelDiv shadow' id="background1">
             <h1 className='label'>{count1}</h1>
           </div>
 
-          <div className='labelDiv'>
+          <div className='labelDiv shadow' id="background2">
             <h1>{count2}</h1>
           </div>
 
-          <div className='labelDiv'>
+          <div className='labelDiv shadow' id="background3">
             <h1>{count3}</h1>
           </div>
         </div>

@@ -3,7 +3,7 @@
 	flex-direction: column;
 	text-align: center;
 	justify-content: center;
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 .labelDiv {
@@ -12,12 +12,13 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
-	margin-bottom: 1rem;
+	margin-bottom: 2.2rem;
 	font-size: 2rem;
-	border: 2px solid #ff017d;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	animation: gradient 15s ease infinite;
+	/* border: 2px solid #ff017d; */
+	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	animation: gradient 15s ease infinite; */
 	width: 500px;
+	height: 110px;
 	color: #fff;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -51,20 +52,24 @@
 }
 
 .btn {
-	background-image: linear-gradient(
-		to right,
-		#ff6e7f 0%,
-		#bfe9ff 51%,
-		#ff6e7f 100%
+	background: linear-gradient(
+		90deg,
+		rgba(108, 245, 54, 1),
+		rgba(223, 240, 93, 1),
+		rgba(245, 12, 12, 1),
+		rgba(204, 24, 240, 1),
+		rgba(24, 42, 240, 1),
+		rgba(24, 240, 211, 1),
+		rgba(64, 230, 39, 1),
+		rgba(108, 245, 54, 1)
 	);
-	margin: 10px;
+	/* background-size: 400%; */
+	animation: sTransition 3s linear infinite;
 	padding: 5px 50px;
 	text-align: center;
 	text-transform: uppercase;
 	transition: 0.5s;
 	background-size: 200% auto;
-	color: white;
-	box-shadow: 0 0 20px #eee;
 	border-radius: 10px;
 	display: block;
 	cursor: pointer;
@@ -73,8 +78,308 @@
 }
 
 .btn:hover {
-	background-position: right center;
-	/* change the direction of the change here */
+	background-image: linear-gradient(
+		45deg,
+		rgba(108, 245, 54, 1),
+		rgba(223, 240, 93, 1),
+		rgba(245, 12, 12, 1),
+		rgba(204, 24, 240, 1),
+		rgba(24, 42, 240, 1),
+		rgba(24, 240, 211, 1),
+		rgba(64, 230, 39, 1),
+		rgba(108, 245, 54, 1)
+	);
+	animation: sTransition 1s linear infinite;
 	color: #fff;
 	text-decoration: none;
+}
+
+/* background gradient code */
+
+#background1 {
+	background: linear-gradient(
+		90deg,
+		#ff017d,
+		#1c2444,
+		#03a9f4,
+		#f441a5,
+		#ffeb3b,
+		#03a9f4,
+		#ff017d
+	);
+	background-size: 400%;
+	animation: sTransition 5s linear infinite;
+}
+#background2 {
+	background: linear-gradient(
+		90deg,
+		#ff0000,
+		#ff9900,
+		#eeff00,
+		#00ff2a,
+		#1100ff,
+		#d700f3,
+		#00f320,
+		#b40c00,
+		#ffd901,
+		#f3003d
+	);
+	background-size: 400%;
+	animation: sTransition 8s linear infinite;
+}
+#background3 {
+	background: linear-gradient(
+		90deg,
+		#ff0000 0%,
+		#fff500 20%,
+		#00ff29 40%,
+		#00a3ff 60%,
+		#aa45ba 80%,
+		#ff0000 100%,
+		#03a9f4,
+		#f441a5,
+		#ffeb3b,
+		#03a9f4
+	);
+	background-size: 400%;
+	animation: sTransition 5s linear infinite;
+}
+
+@keyframes sTransition {
+	0% {
+		background-position: 0%;
+	}
+	100% {
+		background-position: 400%;
+	}
+}
+
+/* border shadow */
+
+.shadow {
+	position: relative;
+	background: linear-gradient(0deg, #000, #262626);
+	border-radius: 10px;
+}
+
+.shadow:before,
+.shadow:after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: linear-gradient(
+		45deg,
+		#fb0094,
+		#0000ff,
+		#00ff00,
+		#ffff00,
+		#ff0000,
+		#fb0094,
+		#0000ff,
+		#00ff00,
+		#ffff00,
+		#ff0000
+	);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: animate 20s linear infinite;
+	border-radius: 10px;
+}
+
+.shadow:after {
+	filter: blur(20px);
+}
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 300% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+/* main heading font styling */
+
+.headingDiv {
+	/* border-radius: 10px; */
+	/* padding: 0.5rem; */
+
+	width: 1100px;
+	height: 140px;
+	background: black;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inner {
+	width: 1110px;
+	height: 150px;
+	background: red;
+	border-radius: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1rem;
+	margin-bottom: 3.5rem;
+	background: linear-gradient(
+		45deg,
+		#ff0000,
+		#ff9900,
+		#eeff00,
+		#00ff2a,
+		#1100ff,
+		#d700f3,
+		#00f320,
+		#b40c00,
+		#ffd901,
+		#f3003d
+	);
+	background-size: 400%;
+	animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0%;
+	}
+	100% {
+		background-position: 400%;
+	}
+}
+
+.shimmer {
+	font-family: "Oswald", sans-serif;
+	font-weight: 400;
+	font-size: 3.5em;
+	margin: 0 auto;
+	padding: 2rem;
+	display: inline;
+	margin-bottom: 0;
+}
+
+.shimmer {
+	text-align: center;
+	color: rgba(255, 255, 255, 0.1);
+
+	background: #ed8080; /* Old browsers */
+	background: -moz-linear-gradient(
+		left,
+		#ed8080 0%,
+		#2a77d6 16%,
+		#5eb524 32%,
+		#eacd25 48%,
+		#ed8080 64%,
+		#2a77d6 80%,
+		#5eb524 100%
+	); /* FF3.6+ */
+	background: -webkit-gradient(
+		linear,
+		left top,
+		right top,
+		color-stop(0%, #ed8080),
+		color-stop(16%, #2a77d6),
+		color-stop(32%, #5eb524),
+		color-stop(48%, #eacd25),
+		color-stop(64%, #ed8080),
+		color-stop(80%, #2a77d6),
+		color-stop(100%, #5eb524)
+	); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(
+		left,
+		#ed8080 0%,
+		#2a77d6 16%,
+		#5eb524 32%,
+		#eacd25 48%,
+		#ed8080 64%,
+		#2a77d6 80%,
+		#5eb524 100%
+	); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(
+		left,
+		#ed8080 0%,
+		#2a77d6 16%,
+		#5eb524 32%,
+		#eacd25 48%,
+		#ed8080 64%,
+		#2a77d6 80%,
+		#5eb524 100%
+	); /* Opera 11.10+ */
+	background: -ms-linear-gradient(
+		left,
+		#ed8080 0%,
+		#2a77d6 16%,
+		#5eb524 32%,
+		#eacd25 48%,
+		#ed8080 64%,
+		#2a77d6 80%,
+		#5eb524 100%
+	); /* IE10+ */
+	background: linear-gradient(
+		to right,
+		#ed8080 0%,
+		#2a77d6 16%,
+		#5eb524 32%,
+		#eacd25 48%,
+		#ed8080 64%,
+		#2a77d6 80%,
+		#5eb524 100%
+	); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed8080', endColorstr='#5eb524',GradientType=1 ); /* IE6-9 */
+
+	-webkit-background-size: 300% 300%;
+	-moz-background-size: 300% 300%;
+	background-size: 300% 300%;
+
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	background-clip: text;
+
+	animation: shimmer infinite 3s linear;
+	-o-animation: shimmer infinite 3s linear;
+	-moz-animation: shimmer infinite 3s linear;
+	-webkit-animation: shimmer infinite 3s linear;
+
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-color: #222;
+}
+@-moz-keyframes shimmer {
+	0% {
+		background-position: top left;
+	}
+	100% {
+		background-position: top right;
+	}
+}
+@-webkit-keyframes shimmer {
+	0% {
+		background-position: top left;
+	}
+	100% {
+		background-position: top right;
+	}
+}
+@-o-keyframes shimmer {
+	0% {
+		background-position: top left;
+	}
+	100% {
+		background-position: top right;
+	}
+}
+@keyframes shimmer {
+	0% {
+		background-position: top left;
+	}
+	100% {
+		background-position: top right;
+	}
 }
