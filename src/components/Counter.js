@@ -16,7 +16,7 @@ const Counter = () => {
     let random = Math.floor(Math.random() * (max - min + 1)) + min;
     let next = random;
     let prevNumber = count1;
-    let nextNumber = next + prevNumber || next - prevNumber;
+    const nextNumber = random > 0 || random < 500 ? next + prevNumber : next - prevNumber;
 
     return (
       console.log(`prev value : ${prevNumber}`),
@@ -25,9 +25,12 @@ const Counter = () => {
 
       console.log(`next value : ${nextNumber}`),
 
-      random
+      // random,
+
+      nextNumber
     );
   }
+
 
 
   const handleClick = () => {
